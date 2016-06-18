@@ -1,10 +1,3 @@
-var state = {items: []},
-		data = localStorage.getItem('data');
-
-if (data) {
-	state = JSON.parse(data);
-};
-
 window.addEventListener('DOMContentLoaded', function () {
 	var count = document.querySelector('.count'),
 			errorMessage = document.querySelector('.error-message'),
