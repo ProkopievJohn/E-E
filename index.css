@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6af4b;
+    font-family: Roboto;
+    color:#334431;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.startGame {
+    text-align: center;
+    margin: auto;
+    background-color: #f2cbbc;
+}
+
+p {
+    padding: 20px;
+}
+
+.mainGame {
+    display: none;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+}
+
+.field {
+    margin: 20px;
+}
+
+.cell.x::after {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '✕';
+    color: #55375c;
+    font-size: 80px;
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    line-height: 106px;
+    text-align: center;
+}
+
+.cell.o::after {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: red;
+    content: '◯';
+    font-size: 80px;
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    line-height: 106px;
+    text-align: center;
+}
+
+.row {
+    height: 110px;
+}
+
+.cell {
+    display: inline-block;
+    border: solid #e05038 2px;
+    width: 110px;
+    height: 110px;
+}
+
+.winner-message {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.generateField {
+  background: #f2cbbc;
+  outline: 10px solid #f2cbbc !important;
+}
+
+.startNewGame {
+  background: #e6af4b;
+  outline: 10px solid #e6af4b !important;
+}
+
+.button--8 {
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.5rem;
+  z-index: 1;
+  border: 2px solid #334431;
+  color: #334431;
+  -webkit-filter: url("#filter-ripple-1");
+  filter: url("../#filter-ripple-1");
+}
+.button--8:hover {
+  border: 2px solid #8a8;
+  color: #8a8;
+}
